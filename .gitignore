@@ -1,0 +1,6 @@
+*.dcu
+/dbexpsda40.dll
+/__history/
+*.local
+*.exe
+*.res
