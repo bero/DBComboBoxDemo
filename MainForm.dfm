@@ -30,6 +30,7 @@ object Form8: TForm8
     Properties.DropDownAutoSize = True
     Properties.DropDownListStyle = lsEditList
     Properties.DropDownSizeable = True
+    Properties.IncrementalFilteringOptions = [ifoUseContainsOperator]
     Properties.ListColumns = <>
     Properties.ListSource = DataModule1.DataSource1
     TabOrder = 2
@@ -43,7 +44,9 @@ object Form8: TForm8
     Properties.DropDownAutoSize = True
     Properties.DropDownListStyle = lsEditList
     Properties.DropDownSizeable = True
+    Properties.IncrementalFilteringOptions = [ifoUseContainsOperator]
     Properties.View = DataModule1.cxGridViewRepository1DBTableView1
+    Properties.ListFieldItem = DataModule1.cxGridViewRepository1DBTableView1Column1
     TabOrder = 3
     Width = 145
   end
