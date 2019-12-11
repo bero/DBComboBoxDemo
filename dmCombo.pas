@@ -8,19 +8,21 @@ uses
   FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.Comp.Client, Data.DB,
   FireDAC.Comp.DataSet, FireDAC.Phys.ODBCBase, FireDAC.Phys.MSSQL, cxStyles, cxCustomData, cxGraphics, cxFilter, cxData,
   cxDataStorage, cxEdit, cxNavigator, dxDateRanges, cxDBData, cxDBExtLookupComboBox, cxClasses, cxGridCustomTableView,
-  cxGridTableView, cxGridDBTableView, cxControls, cxGridCustomView, cxGrid;
+  cxGridTableView, cxGridDBTableView, cxControls, cxGridCustomView, cxGrid, dxmdaset, DBAccess, Uni, MemDS;
 
 type
   TDataModule1 = class(TDataModule)
-    FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink;
-    FDConnection1: TFDConnection;
-    FDQuery1: TFDQuery;
-    DataSource1: TDataSource;
-    cxGridViewRepository1: TcxGridViewRepository;
-    cxGridViewRepository1DBTableView1: TcxGridDBTableView;
-    cxGridViewRepository1DBTableView1Column1: TcxGridDBColumn;
     cxEditRepository1: TcxEditRepository;
     cxEditRepository1ExtLookupComboBoxItem1: TcxEditRepositoryExtLookupComboBoxItem;
+    cxGridViewRepository1: TcxGridViewRepository;
+    cxGridViewRepository1DBTableView1: TcxGridDBTableView;
+    cxGridViewRepository1DBTableView1ColumnRecId: TcxGridDBColumn;
+    cxGridViewRepository1DBTableView1ColumnRecipe_name: TcxGridDBColumn;
+    UniQuery1: TUniQuery;
+    UniConnection1: TUniConnection;
+    UniDataSource2: TUniDataSource;
+     UniQuery2: TUniQuery;
+    UniDataSource1: TUniDataSource;
   private
     { Private declarations }
   public
@@ -31,6 +33,9 @@ var
   DataModule1: TDataModule1;
 
 implementation
+
+uses
+  SQLServerUniProvider;
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
