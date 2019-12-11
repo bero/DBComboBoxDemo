@@ -23,6 +23,12 @@ type
     UniDataSource2: TUniDataSource;
      UniQuery2: TUniQuery;
     UniDataSource1: TUniDataSource;
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+    FDQuery1: TFDQuery;
+    FDQuery2: TFDQuery;
+    FDConnection1: TFDConnection;
+    FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink;
   private
     { Private declarations }
   public

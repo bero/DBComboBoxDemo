@@ -1,7 +1,7 @@
 object DataModule1: TDataModule1
   OldCreateOrder = False
-  Height = 286
-  Width = 606
+  Height = 431
+  Width = 697
   object cxEditRepository1: TcxEditRepository
     Left = 128
     Top = 16
@@ -73,5 +73,44 @@ object DataModule1: TDataModule1
     DataSet = UniQuery1
     Left = 328
     Top = 16
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 320
+    Top = 184
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQuery2
+    Left = 320
+    Top = 264
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select recipe_name from recipes')
+    Left = 432
+    Top = 184
+  end
+  object FDQuery2: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select recipe_name from recipes')
+    Left = 424
+    Top = 272
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=mytestdb'
+      'Server=localhost'
+      'OSAuthent=Yes'
+      'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 536
+    Top = 184
+  end
+  object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
+    Left = 544
+    Top = 272
   end
 end

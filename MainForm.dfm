@@ -22,11 +22,12 @@ object Form8: TForm8
     Left = 644
     Top = 40
     RepositoryItem = DataModule1.cxEditRepository1ExtLookupComboBoxItem1
-    DataBinding.DataField = 'recipe_id'
+    DataBinding.DataField = 'recipe_name'
     DataBinding.DataSource = DataModule1.UniDataSource2
     Properties.DropDownAutoSize = True
     Properties.DropDownListStyle = lsEditList
     Properties.DropDownSizeable = True
+    Properties.IncrementalFilteringOptions = [ifoHighlightSearchText, ifoUseContainsOperator]
     Properties.OnCloseUp = cxDBExtLookupComboBox1PropertiesCloseUp
     TabOrder = 1
     Width = 192
